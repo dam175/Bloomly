@@ -338,7 +338,7 @@ html {
 
 /* Banner */
 .banner {
-  background: url(../IMG/banner.jpg') center/cover no-repeat fixed;
+  background: url('../IMG/banner.jpg') center/cover no-repeat fixed;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -693,6 +693,7 @@ html {
     font-size: 13px;
   }
 }
+
 
 
 
