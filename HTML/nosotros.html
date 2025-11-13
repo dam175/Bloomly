@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros</title>
+  <link rel="stylesheet" href="/css/nosotros.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="d1">
+        <!-- Botón del menú hamburguesa -->
+        <div class="ctg">
+          <button class="menu-btn" id="menu-btn">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+
+        <div class="logo">
+          <a href="http://127.0.0.1:5500/index.html">
+            <img src="/img/logo.png" alt="inicio" />
+          </a>
+          <h1 class="p1">Bloomly</h1>
+        </div>
+      </div>
+
+      <div class="d2">
+        <div class="busqueda">
+          <input type="text" placeholder="Buscar Productos..." />
+          <button><i class="bi bi-search-heart"></i></button>
+        </div>
+
+        <div class="icons">
+          <a href="http://127.0.0.1:5500/HTML/cuenta.html" class="icon-link">
+            <i class="bi bi-person-circle"></i> Cuenta
+          </a>
+          <a href="http://127.0.0.1:5500/HTML/carrito.html" class="icon-link">
+            <i class="bi bi-bag-heart"></i> Compra
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav2">
+      <ul class="ul1">
+        <li><a class="l1" href="http://127.0.0.1:5500/HTML/servicios.html">Servicios</a></li>
+        <li><a class="l1" href="http://127.0.0.1:5500/HTML/galeria.html">Galería</a></li>
+        <li><a class="l1" href="http://127.0.0.1:5500/HTML/nosotros.html">Nosotros</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Fondo oscuro al abrir el menú -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Menú lateral -->
+  <div class="menu-lateral" id="menu-lateral">
+    <div class="mc">
+      <button class="close-btn" id="close-btn"><i class="bi bi-list"></i></button>
+      <h1>Categorías</h1>
+    </div>
+
+    <ul class="menu-lista">
+      <li>
+        <a href="http://127.0.0.1:5500/HTML/floresn.html" class="ic">
+          <i class="bi bi-flower1"></i> Flores Naturales
+        </a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/HTML/ramos.html" class="ic">
+          <i class="bi bi-flower2"></i> Ramos Florales
+        </a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/HTML/arreglosb.html" class="ic">
+          <i class="bi bi-heart"></i> Arreglos para Boda
+        </a>
+      </li>
+      <li>
+        <a href="http://127.0.0.1:5500/HTML/arreglose.html" class="ic">
+          <i class="bi bi-gift"></i> Arreglos Especiales
+        </a>
+      </li>
+    </ul>
+  </div>
+
+    <main class="nosotros">
+        <section class="intro">
+            <h1>Sobre Nosotros</h1>
+            <p>Bloomly nació con el propósito de llenar de color y vida cada momento especial. 🌼</p>
+        </section>
+
+        <section class="contenido">
+            <img src="/img/bloomly.jpeg" alt="Tienda Bloomly">
+            <div class="texto">
+                <div class="ns">
+                    <h2>Nuestra Historia</h2>
+                    <p>Somos una floristería guatemalteca apasionada por el arte floral. Desde nuestros inicios, hemos trabajado con dedicación y creatividad para ofrecer diseños que expresen emociones genuinas.</p>
+                </div>
+
+                <div class="ns">
+                    <h2>Misión</h2>
+                    <p>Brindar experiencias memorables a través de flores y detalles que inspiren amor, gratitud y felicidad.</p>
+                </div>
+
+                <div class="ns">
+                    <h2>Visión</h2>
+                    <p>Ser una de las floristerías más reconocidas de Guatemala por su calidad, innovación y compromiso con los clientes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="valores">
+            <h2>Nuestros Valores</h2>
+            <ul>
+              <li>🌸 Amor por la naturaleza</li>
+              <li>🌷 Creatividad y diseño</li>
+              <li>🌺 Puntualidad y compromiso</li>
+              <li>🌻 Atención personalizada</li>
+            </ul>
+        </section>
+    </main>
+
+        <!-- VENTANA CARRITO -->
+    <div class="carrito" id="carrito">
+      <div class="carrito-contenido">
+        <div class="carrito-header">
+          <h2><i class="bi bi-bag-heart"></i> Tus Compras</h2>
+          <button id="cerrarCarrito" aria-label="Cerrar carrito">✕</button>
+        </div>
+
+        <ul id="listaCarrito"></ul>
+
+        <div class="carrito-footer">
+          <p id="total">Total: Q0.00</p>
+          <div class="botones-carrito">
+            <button id="vaciarCarrito">Vaciar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/JS/nosotros.js"></script>
+    <scriptsrc="/JS/carrito.js"></script>
+  
+
+    <footer class="footer">
+      <div class="footer-contenido">
+
+        <div class="footer-seccion">
+          <h3>Bloomly</h3>
+          <p>Transmitimos emociones a través de flores y detalles especiales.</p>
+         </div>
+
+        <div class="footer-seccion">
+          <h4>Contáctanos</h4>
+          <p><i class="bi bi-geo-alt"></i> Guatemala, Centroamérica</p>
+          <p><i class="bi bi-telephone"></i> +502 1234-5678</p>
+          <p><i class="bi bi-envelope"></i> bloomy@gmail.com</p>
+        </div>
+
+        <div class="footer-seccion redes">
+          <h4>Síguenos</h4>
+          <div class="iconos-redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-tiktok"></i></a>
+            <a href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-final">
+        <p>© 2025 Bloomly | Todos los derechos reservados</p>
+      </div>
+    </footer>
+  
+  </body>
+</html>
